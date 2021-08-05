@@ -1,10 +1,225 @@
 *{
     box-sizing: border-box;
-    margin: 0;
+  
+}
+html {
+    scroll-behavior: smooth;
+}
+:root{
+    --font-type:'Noto Sans JP', sans-serif;
+}
+body{
+    background-color: #E5DFD3;
+/* background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%); */
+    overflow: hidden;
     padding: 0;
+    margin: 0;
+    font-family: var(--font-type);
+
+}
+.header{
+    position: fixed;
+    background-color: white;
+    width: 100vw;
+}
+.container__nav{
+    width: 90vw;
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:auto;
+    /* transition: 0.2s ease-in-out; */
+                /* position: fixed; */
+
 }
 
-body{
-    width: 90vw;
+.nav__menu{
+    list-style: none;
+    color: black;
+    font-size: 1.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 0;
+   
+}
+
+a.atag{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    color: black;
+    text-decoration: none;
+    width: max-content;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+}
+
+.nav__menu > li{
+    width: 7vw;
+    height: 5vh;
+    margin-inline: 2rem;
+    align-self: center;
+}
+a.atag::after{
+    content: " ";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #EECD95;
+    transform-origin: right top;
+    transform: scale(0,1);
+    transition: color 0.2s, transform 0.2s ease-out;
+}
+a.atag:active::after{
+    background-color: #000;
+
+}
+a.atag:hover::after,
+a.atag:focus::after{
+    transform-origin: left top;
+    transform: scale(1,1);
+}
+
+
+/* Floating Social Media Bar Style Starts Here */
+.bx-bx {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 4px;
+    width: 190px;
+    position: fixed;
+    right: -140px;
+    z-index: 1000;
+    font: normal normal 10px Arial;
+    transition: all .25s ease;
+  }
+ 
+  .bx-bx:hover {
+    right: 0;
+  }
+  .bxl-github,.bxl-linkedin,.bxl-codepen {
+    font-size: 20px;
+    color: black;
+    padding: 10px 0;
+    width: 40px;
+    margin-left: 8px;
+  }
+
+
+  .float-git {
+    top: 160px;
+  }
+  
+  .float-link {
+    top: 215px;
+  }
+  
+  .float-codp {
+    top: 270px;
+  }
+
+  .a__float{
+      text-decoration: none;
+      color: black;
+  }
+  .hamburger{
+      display: none;
+  }
+
+.small__logo__hiden{
+    display: none;
+}
+
+
+.close__x{
+    display: none;
+}
+
+@media (max-width: 848px) {
+.nav__menu{
+    display: none;
+}
+
+.bx-menu{
+    font-size: 5rem;
+}
+.small__logo{
+    display: none;
+}
+
+.nav__menu{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    margin: -60px auto;
+    background-color: white;
+}
+
+.close__x{
+    display: block;
+}
+
+
+.nav__menu > li {
+    height: 5vh;
+    margin-inline: 2rem;
+    align-self: center;
+}
+a.atag{
+    text-align: center;
+}
+li.about__me {
+    margin-left: 0px;
+}
+li.contact {
+    margin-left: 14px;
+}
+.container__nav {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+.nav__menu,.close__x {
+    transform:translateX(-100vw);
+    transition: transform 0.3s ease-in;
+}
+.small__logo__hiden{
+    display: block ;
+    margin: auto;   
+}
+
+.hamburger{
+    display: block;
+    /* font-size: 40px; */
+    cursor: pointer;
+    position: fixed;
+    height: 80px;
+}
+.nav__visible, .open__x{
+    transform:translateX(0);
+    transition: transform 0.3s ease-in;
+}
+
+.open__x {
+    transform:translateX(0);
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    font-size: 64px;
+    right: 13px;
     
+}
+
+
+
 }
