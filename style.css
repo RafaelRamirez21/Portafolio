@@ -36,7 +36,12 @@ body{
                 /* position: fixed; */
 
 }
-
+.profile__img{
+  background-image: url('https://lh3.googleusercontent.com/pw/AM-JKLXYovf1fgBRPhOXbOeB1acTPhhigq-bjPR7AY8O5htwHDpUoiikaBLZZ4DyYpyU51nSquv1RdAwjQMjHBmarhT5d6of_dhhrmelfEjR1qU9hCX7yorFn2yRTfG_s9v89cxoa_9oaAbXNrr8ZGt5YKW7=s400-no?authuser=0ss');
+  width: 30vw;
+    height: 30vh;
+    background-repeat: no-repeat;
+}
 .nav__menu{
     list-style: none;
     color: black;
@@ -239,10 +244,12 @@ li.contact {
     height: 100vh;
     background-color: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
     flex-wrap: wrap;
     margin: auto;
+    flex-direction: column;
+    align-items: center;
 }
 
 .text__main{
@@ -265,6 +272,7 @@ li.contact {
 .home__welcome{
     /* width: 100px; */
     height: 50%;
+    margin-top: 8vh;
 }
 .about__welcome{
     width: 30vw;
@@ -526,7 +534,58 @@ button {
 button:hover, .button:hover {
   background:#E5DFD3;
 }
+@media(max-width:850px){
+  .home__container {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+}
+.container__img{
+  width: 100vw;
+  height: auto;
+}
+}
+@media(max-width:1120px){
+  .profile__img {
+    background-image: url(https://lh3.googleusercontent.com/pw/AM-JKLXYovf1fgBRPhOXbOeB1acTPhhigq-bjPR7AY8O5htwHDpUoiikaBLZZ4DyYpyU51nSquv1RdAwjQMjHBmarhT5d6of_dhhrmelfEjR1qU9hCX7yorFn2yRTfG_s9v89cxoa_9oaAbXNrr8ZGt5YKW7=s400-no?authuser=0ss);
+    width: 50vw;
+    height: 36vh;
+    background-repeat: no-repeat;
+    background-size: cover;
 
+}
+.home__container {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+}
+.home__welcome {
+  /* width: 100px; */
+  height: 38%;
+  margin-top: 8vh;
+}
+.container__img {
+  width: 100vw;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+}
+
+}
 /* media queries */
 @media (max-width: 800px) {
     .works_container{
@@ -557,7 +616,47 @@ button:hover, .button:hover {
     .try{
         margin:0 5vw;
     }
+    .home__container {
+      width: 100vw;
+      /* height: 100vh; */
+      background-color: white;
+      display: flex;
+      justify-content: space-around;
+      align-content: center;
+      flex-wrap: wrap;
+      margin: auto;
+      flex-direction: column;
+      align-items: center;
+  }
+  .profile__img {
+    background-image: url('https://lh3.googleusercontent.com/pw/AM-JKLXYovf1fgBRPhOXbOeB1acTPhhigq-bjPR7AY8O5htwHDpUoiikaBLZZ4DyYpyU51nSquv1RdAwjQMjHBmarhT5d6of_dhhrmelfEjR1qU9hCX7yorFn2yRTfG_s9v89cxoa_9oaAbXNrr8ZGt5YKW7=s400-no?authuser=0ss');
+    width: 90vw;
+    height: 42vh;
+    background-repeat: no-repeat;
+    margin: auto;
+    background-size: cover;
+}
+.home__welcome {
+  width: auto;
+  height: 30%;
+  margin-top: 8vh;
+}
   
+}
+
+@media (max-width:400px){
+  .home__container {
+    width: 100vw;
+    /* height: 100vh; */
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+}
 }
 #pj1{
   background-image: url('https://lh3.googleusercontent.com/c63MUVAGdhNoS3sbnBOzUvciC0JzXQETViYs60WqFU9ssoUc1KUytNWLJia8xfuIj-5ReA0cO0RnyfKMR7FQuJgg4q9ZehQuZ7SHAQ4jia4svTFNgMioPbEvKZ78bHk3ky5iJCVOyY-N9ZILYl6dOu98VlmitQcO-as6OY5OV_vqzjcfg4IbNaZ3uT4KtX6hMXHpGafZsFaxZOmArFiqDU-bALg8IJC-XzDWNlIFD2P0cXrhsTowfhuL7L47XqRISSqeOHm48xJrA8lEH1axPHbHpQpMH5X8T1yMMDWZKYwV4GH83hvoY5PiXbFdL6FuKFuKo-Igsoy7NyzgRbQkkYsEuFixrDlpWNeb4G0wNnLNPQxuz7gxZK956nd-_SjldumH8EgS9zQYgiHNhQg601Hn-xUvyfd4wTOfNDf8Y20BLvAxPrSTsDK0FgptN27HpovbY-UxtMqoPt63CIHyi-_ODxC39th3ANz_DSRymDHau2cNYIVKHhcKc0cITHGjbMqWUzgcwaQLQAldLS3F98VVP7XHW73BEhZ8Oc-eOn_SJsluiXj8cvKUz-GuLBSBFLquu-gFo5CSlXWCYlgRvEXHFbx8IJAINKtUaveNKNDM-CcZT7ZXWV71oG01xatv0d2r0ZIpoNH2GV6S-UwXRrv3Xvu-augMIFneGBnayACLqoUXFw8eb6GMvSYJOmLly_x3y_XiSP16ojq08m_vd_s=w1232-h673-no?authuser=0');
