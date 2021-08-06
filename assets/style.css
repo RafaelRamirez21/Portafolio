@@ -11,16 +11,17 @@ html {
 body{
     background-color: #E5DFD3;
 /* background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%); */
-    overflow: hidden;
+    overflow-x: hidden;
     padding: 0;
     margin: 0;
     font-family: var(--font-type);
 
 }
 .header{
-    position: fixed;
+    /* position: fixed; */
     background-color: white;
     width: 100vw;
+    margin: auto;
 }
 .container__nav{
     width: 90vw;
@@ -42,6 +43,7 @@ body{
     flex-wrap: wrap;
     justify-content: space-evenly;
     height: 0;
+    /* position: fixed; */
    
 }
 
@@ -126,7 +128,9 @@ a.atag:focus::after{
       color: black;
   }
   .hamburger{
-      display: none;
+    width: auto;
+    height: 10px;  
+    display: none;
   }
 
 .small__logo__hiden{
@@ -144,7 +148,7 @@ a.atag:focus::after{
 }
 
 .bx-menu{
-    font-size: 5rem;
+    font-size: 4rem;
 }
 .small__logo{
     display: none;
@@ -203,7 +207,7 @@ li.contact {
     /* font-size: 40px; */
     cursor: pointer;
     position: fixed;
-    height: 80px;
+    
 }
 .nav__visible, .open__x{
     transform:translateX(0);
@@ -222,4 +226,320 @@ li.contact {
 
 
 
+}
+
+/* in this line end mediqueries for navbar */
+
+.home__container{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.text__main{
+    font-size: 3rem;
+    color:#EECD95;
+    font-weight: 700;
+}
+.about__container,.contact__container{
+    height:100vh;
+    width: 100vw;
+    background-color: #E5DFD3;
+}
+.about__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: inherit;
+    margin-bottom: 6vh;
+}
+.home__welcome{
+    /* width: 100px; */
+    height: 50%;
+}
+.about__welcome{
+    width: 30vw;
+    margin: 0 auto;
+}
+h2{
+    text-align: center;
+    font-size: 2rem;
+}
+.try{
+    position: fixed;
+    width: 90vw;
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:auto;
+    background-color: white;
+    z-index: 999999;
+}
+
+#str1,
+#str2,
+#str3,
+#str4{
+    font-size: 5vw;
+    text-align: left;
+    font-family: var(--font-type);
+    font-weight: bold;
+}
+
+/* .info__about{
+    width: 80vw;
+    margin: auto;
+
+} */
+
+
+
+/* skill bar */
+.skill__container{
+    width: 30vw;
+    margin: 0 auto;
+  }
+  @keyframes load{
+    from {
+      width: 0%
+    }
+  }
+
+  
+  .bar{
+    background-color:#ffffff;
+    padding: 2px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  }
+  .bar::before{
+    content:  attr(data-skill);
+    background-color: rgba(255, 68, 0, 0.685);
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    border-radius: inherit;
+    animation: load 2s 0s;
+  }
+  
+  .bar.front.advanced::before{
+    background-color: #32e650c4;
+  }
+  .bar.front.expert::before{
+    background-color: rgba(255, 0, 0, 0.726);
+  }
+  .bar.back.intermediate::before{
+    background-color:yellow;
+  }
+  .bar.back::before{
+    background-color: rgba(0, 0, 255, 0.507);
+  }
+  
+  .bar.learning::before{
+    width: calc(60% - 10px);
+  }
+  .bar.basic::before{
+    width: calc(40% - 10px);
+  }
+  .bar.intermediate::before{
+    width: calc(30% - 10px);
+  }
+  .bar.advanced::before{
+    width: calc(40% - 10px);
+  }
+  .bar.expert::before{
+    width: calc(40% - 10px);
+  }
+  
+
+
+  .works__container{
+    /* flex-direction: column;   */
+    width: 80vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+    margin: auto;
+    justify-content: space-evenly;
+    margin-top:3vh;
+   
+  }
+  
+
+
+  
+  
+  .flip-card {
+    background-color: transparent;
+    width: 30vw;
+    height: 50vh;
+    margin: 10px;
+    
+    margin-top: 3vh;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color:black;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  @media (max-width: 800px) {
+    .works__container{
+        flex-direction: column;
+        margin: auto;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-items: center;
+        /* padding-bottom: <20px; */
+      }
+      .flip-card {
+        background-color: transparent;
+        width: 80vw;
+        height: 50vh;
+        margin-top: 3vh;
+        perspective: 1000px;
+    }
+
+}
+
+.form__container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+input {
+  margin-bottom:10px;
+}
+textarea {
+  height:100px;
+  margin-bottom:10px;
+}
+input:first-of-type
+{
+  margin-top:35px;
+}
+input, textarea {
+  font-size: 1em;
+  padding: 15px 10px 10px;
+  font-family: 'Source Sans Pro',arial,sans-serif;
+  border: 1px solid #cecece;
+  background: #d7d7d7;
+  color:#FAFAFA;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 80%;
+  max-width: 600px;
+}
+.works_container{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+button {
+  margin-top:15px;
+  margin-bottom:25px;
+  background-color:#E5DFD3;
+  padding: 12px 0;
+  border-radius: 5px;
+  border: 1px solid #E5DFD3;
+  transition: .5s;
+  display: inline-block;
+  cursor: pointer;
+  width:10%;
+  text-align: center;
+  color:black;
+  background-color: #eecd95;
+}
+button:hover, .button:hover {
+  background:#E5DFD3;
+}
+
+/* media queries */
+@media (max-width: 800px) {
+    .works_container{
+        width: 100vw;
+        height: 179vh;
+        background-color: white;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .about__container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        height: inherit;
+         
+    }
+    .about__welcome {
+        width: 70vw;
+        margin: 0 14vw;
+    }
+    .skill__container {
+        width: 75vw;
+        margin: 0 13vw 32px 13vw;
+    }
+    .try{
+        margin:0 5vw;
+    }
+  
+}
+
+footer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
