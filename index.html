@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
     <title>Portafolio</title>
@@ -109,17 +109,16 @@
     <div  class="works__container">
         <div class="flip-card">
             <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="/assets/books/055f27e160a01e951aa6457d8cfeee15-w204@1x.jpg" alt="Avatar"
-                        style="width:250px;height:300px;" class="book-imag">
+                <div id="pj1" class="flip-card-front">
+
                 </div>
                 <div class="flip-card-back">
-                    <h1>Forward the Foundation</h1>
+                    <h1>Tribute page</h1>
                     <p class="brief">
                     <p>
                     <p><a class="buttom"
-                            href="https://www.amazon.com/-/es/Isaac-Asimov-ebook/dp/B003EY7ICW/ref=sr_1_1?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2ZWHEW2GU3637&dchild=1&keywords=forward+foundation&qid=1626670986&sprefix=forward+founda%2Cstripbooks-intl-ship%2C203&sr=8-1"
-                            target="_blank">Buy this book</a></p>
+                            href=""
+                            target="_blank">Open</a></p>
 
                 </div>
             </div>
@@ -127,15 +126,14 @@
 
         <div class="flip-card">
             <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="/assets/books/0553288105.01._SCLZZZZZZZ_SX500_.jpg" alt="Avatar"
-                        style="width:250px;height:300px;" class="book-imag">
+                <div id="pj2"  class="flip-card-front">
+                    
                 </div>
                 <div class="flip-card-back">
-                    <h1>The Gods Themselves</h1>
+                    <h1>Code challenges</h1>
                     <p class="brief"></p>
                     <p><a class="buttom" href="https://www.amazon.com/-/es/Isaac-Asimov/dp/0553288105"
-                            target="_blank">Buy this book</a></p>
+                            target="_blank">Open</a></p>
 
                 </div>
             </div>
@@ -143,37 +141,51 @@
 
         <div class="flip-card">
             <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="/assets/books/41XwjtTsAGL._SX302_BO1,204,203,200_.jpg" alt="Avatar"
-                        style="width:250px;height:300px;">
+                <div id="pj3"  class="flip-card-front">
+                   
                 </div>
                 <div class="flip-card-back">
                     <h1>Robot Vision</h1>
                     <p class="brief"></p>
                     <p><a class="buttom"
                             href="https://www.amazon.com/-/es/dp/B0159OPX76/ref=sr_1_1?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=robot+vision&qid=1626672427&s=books&sr=1-1"
-                            target="_blank">Buy this book</a></p>
+                            target="_blank">Open</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div id="pj4" class="flip-card-front">
+                    
+                </div>
+                <div class="flip-card-back">
+                    <h1>Robot Vision</h1>
+                    <p class="brief"></p>
+                    <p><a class="buttom"
+                            href="https://www.amazon.com/-/es/dp/B0159OPX76/ref=sr_1_1?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=robot+vision&qid=1626672427&s=books&sr=1-1"
+                            target="_blank">Open</a></p>
                 </div>
             </div>
         </div>
     </div>
-
+ 
+    
 
     </section>
     <section  class="contact__container">
         <!-- 
 contact form created for treehouse competition.
 -->
-        <form id="contact">
+        <form action="https://formsubmit.co/rrramirezb251@gmail.com" method="POST" id="contact">
             <div class="form__container">
                 <div class="head">
                     <h2>Contact</h2>
                 </div>
-                <input type="text" name="name" placeholder="Name" /><br />
+                <input type="name" name="name" placeholder="Name" /><br />
                 <input type="email" name="email" placeholder="Email" /><br />
-                <textarea type="text" name="message" placeholder="Message"></textarea><br />
-                <div class="message">Message Sent</div>
-                <button id="submit" type="submit">
+                <textarea type="message" name="message" placeholder="Message"></textarea><br />
+                
+                <button target="_blank" id="submit" type="submit">
                     Send!
                 </button>
             </div>

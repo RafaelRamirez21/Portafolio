@@ -56,6 +56,7 @@ a.atag{
     width: max-content;
     font-weight: 600;
     letter-spacing: 1px;
+    cursor: pointer;
 
 }
 
@@ -179,6 +180,7 @@ a.atag:focus::after{
 }
 a.atag{
     text-align: center;
+    cursor: pointer;
 }
 li.about__me {
     margin-left: 0px;
@@ -247,7 +249,7 @@ li.contact {
     font-weight: 700;
 }
 .about__container,.contact__container{
-    height:100vh;
+    /* height:100vh; */
     width: 100vw;
     background-color: #E5DFD3;
 }
@@ -371,8 +373,9 @@ h2{
     align-content: center;
     
     margin: auto;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-top:3vh;
+    flex-wrap: wrap;
    
   }
   
@@ -382,7 +385,7 @@ h2{
   
   .flip-card {
     background-color: transparent;
-    width: 30vw;
+    width: 38vw;
     height: 50vh;
     margin: 10px;
     
@@ -416,16 +419,35 @@ h2{
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
-    background-color: #bbb;
+    background-color: white;
+    border-radius: 20px;
     color: black;
   }
   
   /* Style the back side */
   .flip-card-back {
-    background-color:black;
-    color: white;
+    background-color:#e5dfd3;
+    color: black;
     transform: rotateY(180deg);
+    border-radius: 20px;
   }
+  @media (max-width: 1000px) {
+    .works__container{
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-items: center;
+        /* padding-bottom: <20px; */
+      }
+      .flip-card {
+        background-color: transparent;
+        width: 66vw;
+        height: 50vh;
+        margin: 10px;
+        margin-top: 3vh;
+        perspective: 1000px;
+    }}
   @media (max-width: 800px) {
     .works__container{
         flex-direction: column;
@@ -468,7 +490,7 @@ input, textarea {
   font-family: 'Source Sans Pro',arial,sans-serif;
   border: 1px solid #cecece;
   background: #d7d7d7;
-  color:#FAFAFA;
+  color:black;
   border-radius: 5px;
   box-sizing: border-box;
   width: 80%;
@@ -476,7 +498,7 @@ input, textarea {
 }
 .works_container{
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: white;
     margin: auto;
     display: flex;
@@ -507,7 +529,7 @@ button:hover, .button:hover {
 @media (max-width: 800px) {
     .works_container{
         width: 100vw;
-        height: 179vh;
+       
         background-color: white;
         margin: auto;
         display: flex;
@@ -535,7 +557,33 @@ button:hover, .button:hover {
     }
   
 }
-
+#pj1{
+  background-image: url('https://lh3.googleusercontent.com/c63MUVAGdhNoS3sbnBOzUvciC0JzXQETViYs60WqFU9ssoUc1KUytNWLJia8xfuIj-5ReA0cO0RnyfKMR7FQuJgg4q9ZehQuZ7SHAQ4jia4svTFNgMioPbEvKZ78bHk3ky5iJCVOyY-N9ZILYl6dOu98VlmitQcO-as6OY5OV_vqzjcfg4IbNaZ3uT4KtX6hMXHpGafZsFaxZOmArFiqDU-bALg8IJC-XzDWNlIFD2P0cXrhsTowfhuL7L47XqRISSqeOHm48xJrA8lEH1axPHbHpQpMH5X8T1yMMDWZKYwV4GH83hvoY5PiXbFdL6FuKFuKo-Igsoy7NyzgRbQkkYsEuFixrDlpWNeb4G0wNnLNPQxuz7gxZK956nd-_SjldumH8EgS9zQYgiHNhQg601Hn-xUvyfd4wTOfNDf8Y20BLvAxPrSTsDK0FgptN27HpovbY-UxtMqoPt63CIHyi-_ODxC39th3ANz_DSRymDHau2cNYIVKHhcKc0cITHGjbMqWUzgcwaQLQAldLS3F98VVP7XHW73BEhZ8Oc-eOn_SJsluiXj8cvKUz-GuLBSBFLquu-gFo5CSlXWCYlgRvEXHFbx8IJAINKtUaveNKNDM-CcZT7ZXWV71oG01xatv0d2r0ZIpoNH2GV6S-UwXRrv3Xvu-augMIFneGBnayACLqoUXFw8eb6GMvSYJOmLly_x3y_XiSP16ojq08m_vd_s=w1232-h673-no?authuser=0');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#pj2{
+  background-image: url('https://i1.wp.com/jeremeyduvall.com/wp-content/uploads/2015/09/codechallenge.png?fit=1024%2C512&ssl=1');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#pj3,#pj4{
+  background-image: url('https://edteam-media.s3.amazonaws.com/community/original/21aefa49-6698-4d8e-b09c-09266ef80f42.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.buttom{
+  background-color:white;
+  border: 1px solid black;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 0 1vw;
+  color: #000;
+  align-self: center;
+}
 footer{
     text-align: center;
     display: flex;

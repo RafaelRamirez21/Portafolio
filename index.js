@@ -4,7 +4,7 @@ const close=document.querySelector('.close__x');
 const nav=document.querySelectorAll('.nav__menu');
 const hiddeButton=document.querySelectorAll('.bx-menu');
 const match=document.querySelectorAll('.atag');
-console.log(match)
+
 
 console.log(hiddeButton)
 open.addEventListener("click", () => {
@@ -28,12 +28,16 @@ for (let i of string){
     var str=i.split("")
     array.push(str)
     let el=document.getElementById(`str${j}`)
-    console.log(el)
+    
     array2.push(el)
     j+=1;
 }
-for (let i=0;array.length>0;i++){
-    (function animate() {
+
+for (let i=0;array.length>i;i++){
+    console.log(i)
+    animate()
+
+    function animate() {
         array[i].length > 0 ? array2[i].innerHTML += array[i].shift() : clearTimeout(running);
         if (i===0){
             var running = setTimeout(animate, 90);
@@ -41,19 +45,27 @@ for (let i=0;array.length>0;i++){
             var running = setTimeout(animate, 180);
         }else{
             var running = setTimeout(animate, 200);
-        }
-     
-     
-    })();
+        }     
+    };
 
 }
+console.log(match)
+// match.addEventListener("click", () => {
+//     console.log('1')
+//     nav.forEach(nav_el=>nav_el.classList.remove('nav__visible'))
+//     hiddeButton.forEach(av_el=>av_el.classList.add('bx-menu'))
+//     closeX.forEach(av_el=>av_el.classList.remove('open__x'))
+// });
 
 
 
-
-
-if (window.matchMedia("(min-width: 800px)").matches) {
-    /* La pantalla tiene al menos 400 píxeles de ancho */
-  } else {
-    /* La pantalla tiene menos de 400 píxeles de ancho */
-  }
+// if (window.matchMedia("(min-width: 800px)").matches) {
+//     match.addEventListener("click", () => {
+//         nav.forEach(nav_el=>nav_el.classList.remove('nav__visible'))
+//         hiddeButton.forEach(av_el=>av_el.classList.add('bx-menu'))
+//         closeX.forEach(av_el=>av_el.classList.remove('open__x'))
+//     });
+//     /* La pantalla tiene al menos 400 píxeles de ancho */
+//   } else {
+//     /* La pantalla tiene menos de 400 píxeles de ancho */
+//   }
