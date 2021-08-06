@@ -37,10 +37,11 @@ body{
 
 }
 .profile__img{
-  background-image: url('https://lh3.googleusercontent.com/pw/AM-JKLXYovf1fgBRPhOXbOeB1acTPhhigq-bjPR7AY8O5htwHDpUoiikaBLZZ4DyYpyU51nSquv1RdAwjQMjHBmarhT5d6of_dhhrmelfEjR1qU9hCX7yorFn2yRTfG_s9v89cxoa_9oaAbXNrr8ZGt5YKW7=s400-no?authuser=0ss');
+  background-image: url('https://lh3.googleusercontent.com/pw/AM-JKLXBpPkBRKbuAB7mkwR03Re4WgAoq1cFU48Jami2mxWCdj3ARR30pSzc21LIJ_hZ3Su46pfMccGiKYMIQa6ROmkNgfrxibmHfaCHth7zCfR_-X03QLEHbURVu-7kAbu-n55GBWytyEXEnZ_44l3sWiJR=s400-no?authuser=0');
   width: 30vw;
     height: 30vh;
     background-repeat: no-repeat;
+
 }
 .nav__menu{
     list-style: none;
@@ -171,7 +172,7 @@ a.atag:focus::after{
     justify-content: space-evenly;
     align-items: center;
     padding: 0;
-    margin: -60px auto;
+    margin: -60px -5vw;
     background-color: white;
 }
 
@@ -181,6 +182,7 @@ a.atag:focus::after{
 
 
 .nav__menu > li {
+  width: 20vw;
     height: 5vh;
     margin-inline: 2rem;
     align-self: center;
@@ -228,7 +230,7 @@ li.contact {
     position: fixed;
     z-index: 100;
     top: 0px;
-    font-size: 64px;
+    font-size: 40px;
     right: 13px;
     
 }
@@ -389,7 +391,9 @@ h2{
    
   }
   
-
+.nav__menu--op{
+  cursor: pointer;
+}
 
   
   
@@ -554,7 +558,7 @@ button:hover, .button:hover {
 }
 @media(max-width:1120px){
   .profile__img {
-    background-image: url(https://lh3.googleusercontent.com/pw/AM-JKLXYovf1fgBRPhOXbOeB1acTPhhigq-bjPR7AY8O5htwHDpUoiikaBLZZ4DyYpyU51nSquv1RdAwjQMjHBmarhT5d6of_dhhrmelfEjR1qU9hCX7yorFn2yRTfG_s9v89cxoa_9oaAbXNrr8ZGt5YKW7=s400-no?authuser=0ss);
+    background-image: url(https://lh3.googleusercontent.com/pw/AM-JKLXBpPkBRKbuAB7mkwR03Re4WgAoq1cFU48Jami2mxWCdj3ARR30pSzc21LIJ_hZ3Su46pfMccGiKYMIQa6ROmkNgfrxibmHfaCHth7zCfR_-X03QLEHbURVu-7kAbu-n55GBWytyEXEnZ_44l3sWiJR=s400-no?authuser=0);
     width: 50vw;
     height: 36vh;
     background-repeat: no-repeat;
@@ -566,7 +570,7 @@ button:hover, .button:hover {
   height: 100vh;
   background-color: white;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-content: center;
   flex-wrap: wrap;
   margin: auto;
@@ -629,9 +633,9 @@ button:hover, .button:hover {
       align-items: center;
   }
   .profile__img {
-    background-image: url('https://lh3.googleusercontent.com/pw/AM-JKLXYovf1fgBRPhOXbOeB1acTPhhigq-bjPR7AY8O5htwHDpUoiikaBLZZ4DyYpyU51nSquv1RdAwjQMjHBmarhT5d6of_dhhrmelfEjR1qU9hCX7yorFn2yRTfG_s9v89cxoa_9oaAbXNrr8ZGt5YKW7=s400-no?authuser=0ss');
-    width: 90vw;
-    height: 42vh;
+    background-image: url('https://lh3.googleusercontent.com/pw/AM-JKLXBpPkBRKbuAB7mkwR03Re4WgAoq1cFU48Jami2mxWCdj3ARR30pSzc21LIJ_hZ3Su46pfMccGiKYMIQa6ROmkNgfrxibmHfaCHth7zCfR_-X03QLEHbURVu-7kAbu-n55GBWytyEXEnZ_44l3sWiJR=s400-no?authuser=0');
+    width: 100vw;
+    height: 56vh;
     background-repeat: no-repeat;
     margin: auto;
     background-size: cover;
@@ -639,7 +643,7 @@ button:hover, .button:hover {
 .home__welcome {
   width: auto;
   height: 30%;
-  margin-top: 8vh;
+  margin-top: 11vh;
 }
   
 }
