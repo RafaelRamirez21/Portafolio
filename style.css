@@ -18,10 +18,12 @@ body{
 
 }
 .header{
-    /* position: fixed; */
+    position: fixed;
     background-color: white;
     width: 100vw;
     margin: auto;
+    display: flex;
+    z-index: 9999999;
 }
 .container__nav{
     width: 90vw;
